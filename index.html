@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Uma história interativa sobre o uso responsável da inteligência artificial nas escolas.">
+  <title>Entre Linhas e Algoritmos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="hero">
+      <p class="eyebrow">HISTÓRIA INTERATIVA</p>
+      <h1>Entre Linhas e Algoritmos</h1>
+      <p class="subtitle">Uma decisão pode transformar a escola inteira.</p>
+    </header>
+
+    <section class="game-card" aria-live="polite">
+      <div class="status-row">
+        <span id="chapter-label">Capítulo 1 de 4</span>
+        <span id="path-label">Caminho: ainda não escolhido</span>
+      </div>
+      <div class="progress-track" aria-label="Progresso da história">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+
+      <div id="story" class="story"></div>
+      <div id="choices" class="choices" role="group" aria-label="Escolhas da história"></div>
+      <button id="restart-button" class="secondary-button hidden" type="button">Jogar novamente</button>
+    </section>
+
+    <aside class="credits">
+      <h2>Créditos</h2>
+      <p>3i - Alunos: Kleber 22 e Diego 7</p>
+      <p class="note">Tema: escolhas responsáveis no uso de IA na educação.</p>
+    </aside>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
